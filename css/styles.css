@@ -37,7 +37,7 @@ h2 {
 }
 
 #main-nav {
-  background:#ffffff;
+  background: url(../img/white-bg.png);
 }
 
 #main-nav a {
@@ -63,10 +63,10 @@ h2 {
 }
 
 #home {
-  background:#F40000;
+  background:#ffffff;
   min-height: 600px;
   padding-top:200px;
-  color:#ffffff;
+  color:#f40000;
 }
 
 #portfolio1 {
@@ -88,6 +88,38 @@ h2 {
 }
 
 #about {
-  padding-top:200px;
-  padding-bottom:200px;
+  padding-top:100px;
+}
+
+.about-paragraph {
+  padding-top:150px;
+}
+
+.nav-tabs {
+  border: none;
+  position: absolute;
+  margin-top:50px;
+  z-index:9999;
+}
+
+.nav-tabs > li > a {
+  border: none;
+}
+
+.nav-tabs > li > a:hover {
+  background:none !important;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+    border: none;
+}
+
+.tab-pane .active {
+  border: none !important;
+}
+
+.tab-content {
+  border: none !important;
 }
