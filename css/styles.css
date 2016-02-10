@@ -1,0 +1,93 @@
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size:14px;
+  line-height: 22px;
+  color:#000000;
+}
+
+body {
+  position: relative;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color:#000000;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.white {
+  color:#ffffff;
+}
+
+.red {
+  color:#f40000;
+}
+
+#main-nav {
+  background:#ffffff;
+}
+
+#main-nav a {
+  color:#f40000;
+  padding-bottom:4px;
+}
+
+#bs-example-navbar-collapse-1 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav > .active > a {
+      color: #f40000 !important;
+      background: none !important;
+      border-bottom: 4px #f40000 solid !important;
+}
+
+.logo2 {
+  font-weight: lighter;
+}
+
+#home {
+  background:#F40000;
+  min-height: 600px;
+  padding-top:200px;
+  color:#ffffff;
+}
+
+#portfolio1 {
+  background-image: url(../img/mast_bg.jpg);
+  min-height:400px;
+  text-indent: -9999px;
+  padding-top:120px;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+#portfolio1:hover {
+  text-indent: 0;
+  background:#f40000;
+}
+
+.border-under {
+  text-decoration: underline;
+}
+
+#about {
+  padding-top:200px;
+  padding-bottom:200px;
+}
