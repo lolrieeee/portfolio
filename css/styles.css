@@ -38,9 +38,15 @@ h2 {
 
 #main-nav {
   background: url(../img/white-bg.png);
+  z-index:9999;
 }
 
 #main-nav a {
+  color:#cccccc;
+  padding-bottom:4px;
+}
+
+#main-nav a:hover {
   color:#f40000;
   padding-bottom:4px;
 }
@@ -52,25 +58,46 @@ h2 {
   font-size: 20px;
 }
 
-.nav > .active > a {
+.nav > .active {
       color: #f40000 !important;
-      background: none !important;
-      border-bottom: 4px #f40000 solid !important;
+}
+
+.nav > .active > a {
+  background:none !important;
+  color:#f40000 !important;
+}
+
+.logo {
+  margin-top:10px;
 }
 
 .logo2 {
-  font-weight: lighter;
+  font-size:15px;
 }
 
 #home {
-  background:#ffffff;
-  min-height: 600px;
+  min-height: 800px;
   padding-top:200px;
   color:#f40000;
+  background:#ffffff;
+}
+
+.intro {
+  width: 75%;
+position: fixed;
+left: 50%;
+margin-left: -37.5%;
+z-index:1;
+}
+
+#portfolio {
+  background:#ffffff;
+  z-index:2;
+  position: relative;
 }
 
 #portfolio1 {
-  background-image: url(../img/mast_bg.jpg);
+  background-image: url(../img/project-1.jpg);
   min-height:400px;
   text-indent: -9999px;
   padding-top:120px;
@@ -78,7 +105,27 @@ h2 {
   padding-right:15px;
 }
 
-#portfolio1:hover {
+#portfolio2 {
+  background-image: url(../img/project-2.jpg);
+  min-height:400px;
+  text-indent: -9999px;
+  padding-top:120px;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+#portfolio3 {
+  background-image: url(../img/project-3.jpg);
+  min-height:400px;
+  text-indent: -9999px;
+  padding-top:120px;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+#portfolio1:hover,
+#portfolio2:hover,
+#portfolio3:hover {
   text-indent: 0;
   background:#f40000;
 }
@@ -89,21 +136,35 @@ h2 {
 
 #about {
   padding-top:100px;
+  background: #ffffff;
+  z-index:3;
+  position: relative;
 }
 
 .about-paragraph {
   padding-top:150px;
 }
 
+#about > .nav > .active {
+    border-bottom: solid 4px #f40000;
+}
+
 .nav-tabs {
   border: none;
   position: absolute;
   margin-top:50px;
-  z-index:9999;
+  z-index:1;
+}
+
+.nav-tabs > li {
+    margin-left:15px;
 }
 
 .nav-tabs > li > a {
   border: none;
+  padding-left:0;
+  padding-right:0;
+  padding-bottom:0;
 }
 
 .nav-tabs > li > a:hover {
@@ -122,4 +183,45 @@ h2 {
 
 .tab-content {
   border: none !important;
+}
+
+#contact {
+  padding-top:350px;
+  padding-bottom:50px;
+  background:#dddddd;
+  min-height: 800px;
+  position: relative;
+  z-index: 3;
+}
+
+.intro {
+  width: 75%;
+position: fixed;
+left: 50%;
+margin-left: -37.5%;
+z-index:1;
+}
+
+.ending {
+}
+
+.test:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -2px;
+  left: 0;
+  background-color: #f40000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.test:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
