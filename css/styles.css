@@ -64,11 +64,11 @@ h2 {
   font-size: 20px;
 }
 
-.nav > .active {
+.nav .active {
   color: #f40000 !important;
 }
 
-.nav > .active > a {
+.nav .active a {
   background:none !important;
   color:#f40000 !important;
 }
@@ -101,7 +101,6 @@ h2 {
   margin-left: -37.5%;
   z-index:1;
 }
-
 
 
 
@@ -153,9 +152,26 @@ h2 {
 }
 
 
+/* ===========================Skills============================*/
+#skills {
+  padding-top:50px;
+  padding-bottom:50px;
+  background: #005eff;
+}
 
+#skills h2 {
+  color:#eeeeee;
+}
 
+#skills h2:hover {
+  color:#ffffff;
+}
 
+.skill-border {
+  border:solid 4px #ffffff;
+  padding-top:5px;
+  padding-bottom:20px;
+}
 
 /* ===========================ABOUT============================*/
 #about {
@@ -216,22 +232,19 @@ h2 {
 
 /* ===========================CONTACT============================*/
 #contact {
-  padding-top:350px;
-  padding-bottom:50px;
+  padding-top:120px;
   background:#dddddd;
-  min-height: 800px;
+  min-height: 700px;
   position: relative;
   z-index: 3;
 }
 
-.intro {
-  width: 75%;
-  position: fixed;
-  left: 50%;
-  margin-left: -37.5%;
-  z-index:1;
-}
 
+
+
+
+
+/* ===========================UNDERLINE ANIMATION============================*/
 .test:before {
   content: "";
   position: absolute;
