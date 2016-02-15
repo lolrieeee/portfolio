@@ -9,6 +9,7 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,700italic,300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
 </head>
+
 <body data-spy="scroll" data-target="#scrollall" id="scrollall">
   <!-- ================= NAV ================= -->
   <nav class="navbar-default container-fluid navbar-fixed-top" id="main-nav">
@@ -44,15 +45,23 @@
 <div class="container-fluid" id="home">
   <div class="container text-center">
     <div class="intro row">
-      <h1 class="red">&lt; Hello World &gt;</h1>
-    <div class="row">
-    <div class="col-md-2 col-md-offset-3"><h2 class="red">HTML</h2></div>
-    <div class="col-md-2"><h2 class="red">CSS</h2></div>
-    <div class="col-md-2"><h2 class="red">Javascript</h2></div>
-  </div><br/>
-
-  <p class="text-left col-md-6 col-md-offset-3 red">Thank you for visiting my online portfolio. Below you will find a collection of some of my works that displays my skills in the front-end web development field, or relevant to it. My contact information can be found in the <a href="#end"><strong>Contact Me section</strong></a>. Enjoy.</p>
-</div>
+      <h1 class="red">&lt; Hello World &gt;<span id="blink">_</span>
+      </h1>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-3">
+          <h2 class="red">HTML</h2>
+        </div>
+        <div class="col-md-2">
+          <h2 class="red">CSS</h2>
+        </div>
+        <div class="col-md-2">
+          <h2 class="red">Javascript</h2>
+        </div>
+      </div>
+      <br/>
+      <p class="text-left col-md-6 col-md-offset-3 red">Thank you for visiting my online portfolio. Below you will find a collection of some of my works that displays my skills in the front-end web development field, or relevant to it. My contact information can be found in the <a href="#end"><strong>Contact Me section</strong></a>. Enjoy.
+      </p>
+    </div>
   </div>
 </div>
 
@@ -62,48 +71,89 @@
 <!-- ================= PORTFOLIO ================= -->
 <div id="portfolio" class="container-fluid">
   <div class="row">
-    <a href="http://www.willemsprinting.com/scre/index.html" target="_blank"><div class="col-md-4 col-sm-4 col-xs-12 text-center" id="portfolio1"><h3 class="white">South County Real Estate</h3><p class="white">Central California real estate publication online presence.</p></div></a>
-    <a href="http://willemsprinting.com/" target="_blank"><div class="col-md-4 col-sm-4 col-xs-12 text-center" id="portfolio2"><h3 class="white">Willems Printing</h3><p class="white">Central Valley Newsprint company.</p></div></a>
-    <a href="" target="_blank"><div class="col-md-4 col-sm-4 col-xs-12 text-center" id="portfolio3"><h3 class="white">Restaurante</h3><p class="white">Class project of mock gourmet restaurant business.</p></div></a>
+    <a href="http://www.willemsprinting.com/scre/index.html" target="_blank">
+      <div class="col-md-4 col-sm-4 col-xs-12 text-center" id="portfolio1">
+        <h3 class="white">South County Real Estate</h3>
+        <p class="white">Central California real estate publication online presence.</p>
+      </div>
+    </a>
+
+    <a href="http://willemsprinting.com/" target="_blank">
+      <div class="col-md-4 col-sm-4 col-xs-12 text-center" id="portfolio2">
+        <h3 class="white">Willems Printing</h3>
+        <p class="white">Central Valley Newsprint company.</p>
+      </div>
+    </a>
+
+    <a href="" target="_blank">
+      <div class="col-md-4 col-sm-4 col-xs-12 text-center" id="portfolio3">
+        <h3 class="white">Restaurante</h3>
+        <p class="white">Class project of mock gourmet restaurant business.</p>
+      </div>
+    </a>
   </div>
 </div>
 
 
 <!-- ================= ABOUT ================= -->
-  <!-- Nav tabs -->
-  <div class="container" id="about">
+<!-- Nav tabs -->
+<div class="container" id="about">
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#larry" aria-controls="larry" role="tab" data-toggle="tab"><h1>Larry The Human</h1></a></li>
-    <li role="presentation"><a href="#finn" aria-controls="finn" role="tab" data-toggle="tab"><h1>Finn the Dog</h1></a></li>
+    <li role="presentation" class="active">
+      <a href="#larry" aria-controls="larry" role="tab" data-toggle="tab">
+      <h1>Larry The Human</h1>
+      </a>
+    </li>
+    <li role="presentation">
+      <a href="#finn" aria-controls="finn" role="tab" data-toggle="tab">
+        <h1>Finn the Dog</h1>
+      </a>
+    </li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade in active" id="larry"><p class="col-md-6 about-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/><a href="">Github Account ></a></p><div class="col-md-6"><img src="img/larry.png" alt="" class="img-responsive"></div></div>
+    <div role="tabpanel" class="tab-pane fade in active" id="larry">
+      <p class="col-md-6 about-paragraph">I graduated from Fresno State in California in 2012 and started my professional career as a graphic designer. Initially I  loved what I was doing, but slowly I felt my drive doing away. At the same time my interest in web designing and web development grew. I connected with the intricacies the coding language had.<br/><br/>
 
+      Now I am pursuing a career in web development, especially front-end development. This is a big field but I feel I up to the task in this ever-changing environment.<br/><br/>
 
-    <div role="tabpanel" class="tab-pane fade" id="finn"><p class="col-md-6 about-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><div class="col-md-6"><img src="img/finn.png" alt="" class="img-responsive"></div></div>
+      <a href="">Github Account ></a>
+      </p>
+      <div class="col-md-6">
+        <img src="img/larry.png" alt="" class="img-responsive">
+      </div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane fade" id="finn">
+      <p class="col-md-6 about-paragraph">Meet Finn the border collie. He is my friend of unconditional love. I can always count on him to cheer me up on a long day. He is super adventurous and loves to go for hikes. He may be a pain in the butt sometimes, but that doesn't mean I love him any less.
+      </p>
+      <div class="col-md-6">
+        <img src="img/finn.png" alt="" class="img-responsive">
+      </div>
+    </div>
   </div>
 </div>
 
 <!-- ================= CONTACT ================= -->
 <div class="container-fluid" id="contact">
   <div class="row ending">
-  <h1 class="red text-center">&lt;/ Goodbye World &gt;</h1>
-  <p class="text-left col-md-6 col-md-offset-3 red">Thanks again for your time. If you have any questions or comments please contact me with the form below, or e-mail <strong>lolrieeee@gmail.com</strong>, or <strong>(408)332-9990</strong>. Have a good day! <br>
-    	<div class="text-center"><!-- Do not change the code! -->
-			<a id="foxyform_embed_link_746835" href="http://www.foxyform.com/">foxyform</a>
-			<script type="text/javascript">
+    <h1 class="red text-center">&lt;/ Goodbye World &gt;</h1>
+    <p class="text-left col-md-6 col-md-offset-3 red">Thanks again for your time. If you have any questions or comments please contact me with the form below, or e-mail <strong>lolrieeee@gmail.com</strong>, or <strong>(408)332-9990</strong>. Have a good day!<br>
+
+      <div class="text-center"><!-- Do not change the code! -->
+			  <a id="foxyform_embed_link_746835" href="http://www.foxyform.com/">foxyform</a>
+			  <script type="text/javascript">
 				(function(d, t){
    			var g = d.createElement(t),
        	s = d.getElementsByTagName(t)[0];
    			g.src = "http://www.foxyform.com/js.php?id=746835&sec_hash=7286b24b06f&width=350px";
    			s.parentNode.insertBefore(g, s);
 				}(document, "script"));
-			</script><!-- Do not change the code! -->
-		</div>
-  </p>
-</div>
+			  </script><!-- Do not change the code! -->
+		  </div>
+      </p>
+  </div>
 </div>
 
 <div id="end"></div>
