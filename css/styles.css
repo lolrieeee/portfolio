@@ -1,4 +1,8 @@
 /* ===========================GLOBALS============================*/
+* {
+  border-radius: 0 !important;
+}
+
 p {
   font-family: 'Open Sans', sans-serif;
   font-size:14px;
@@ -37,7 +41,9 @@ h2 {
   color:#f40000;
 }
 
-
+.blue {
+  color:#1e3f98;
+}
 
 
 
@@ -47,9 +53,14 @@ h2 {
   z-index:9999;
 }
 
+#main-nav:hover {
+  background:#ffffff;
+}
+
 #main-nav a {
   color:#cccccc;
   padding-bottom:4px;
+  transition: color .5s ease;
 }
 
 #main-nav a:hover {
@@ -61,7 +72,7 @@ h2 {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .nav .active {
@@ -81,7 +92,9 @@ h2 {
   font-size:15px;
 }
 
+#blink {
 
+}
 
 
 
@@ -91,7 +104,11 @@ h2 {
   min-height: 800px;
   padding-top:200px;
   color:#f40000;
-  background:#ffffff;
+  background-image: url(../img/mast-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 3;
 }
 
 .intro {
@@ -99,9 +116,52 @@ h2 {
   position: fixed;
   left: 50%;
   margin-left: -37.5%;
-  z-index:1;
+  z-index:4;
 }
 
+.intro-btn {
+  margin-top:30px;
+  border:3px solid #1e3f98;
+  background:none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color:#1e3f98;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.intro-btn:hover {
+  color:#ffffff;
+  background: #1e3f98;
+  border:3px solid #1e3f98;
+}
+
+
+
+/* ===========================QUALITY============================*/
+#quality {
+  padding-top:200px;
+  padding-bottom:300px;
+  position: relative;
+  z-index:6;
+  background-image: url(../img/mast3-bg.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+#quality h1 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+#quality p {
+  font-size:22px;
+  font-weight: lighter;
+  line-height: 28px;
+}
 
 
 
@@ -109,7 +169,7 @@ h2 {
 /* ===========================PORTFOLIO============================*/
 #portfolio {
   background:#ffffff;
-  z-index:2;
+  z-index:10;
   position: relative;
 }
 
@@ -154,9 +214,13 @@ h2 {
 
 /* ===========================Skills============================*/
 #skills {
-  padding-top:50px;
-  padding-bottom:50px;
-  background: #005eff;
+  padding-top:130px;
+  padding-bottom:150px;
+  background-image: url(../img/mast2-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 1000;
+  position: relative;
 }
 
 #skills h2 {
@@ -232,14 +296,12 @@ h2 {
 
 /* ===========================CONTACT============================*/
 #contact {
-  padding-top:120px;
+  padding-top:100px;
   background:#dddddd;
   min-height: 700px;
   position: relative;
   z-index: 3;
 }
-
-
 
 
 
@@ -264,4 +326,12 @@ h2 {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+
+@media (max-width: 600px) {
+  #about h1 {
+    font-size:18px;
+    padding-top:20px;
+  }
 }
